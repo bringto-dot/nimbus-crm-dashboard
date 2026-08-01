@@ -9,9 +9,10 @@ entirely in the browser.
 
 Sign in with any email and any password of 6+ characters — there's no real
 backend, so nothing you type is validated against a server or stored anywhere
-but your own browser's `localStorage`.
+but your own browser's `localStorage`. The UI defaults to Russian, with a
+one-click switch to English in the header.
 
-![Dashboard, light theme](docs/screenshots/02-dashboard-light.png)
+![Sign-in screen](docs/screenshots/01-login.png)
 
 ## Stack
 
@@ -20,34 +21,42 @@ Zustand · React Router · Recharts · `@dnd-kit` · lucide-react
 
 ## Features
 
-- **Dashboard** — four KPI cards, a revenue line chart, a deals-by-stage bar
-  chart, and a table of the five most recent deals.
-- **Clients** — search, status filter, sortable columns, a create/edit
-  dialog with validation, and delete with confirmation.
-- **Deals** — a five-column Kanban board (New → In Progress → Negotiation →
-  Won / Lost) with pointer, touch, and keyboard drag-and-drop.
-- **Tasks** — a checklist with client links, due dates, and colour-coded
-  priority, filterable by open/done.
-- **Theming** — light/dark, persisted, applied before first paint (no flash).
-- **Localization** — full English/Russian UI switch, dates and currency
-  formatted per-locale via `Intl`.
-- **Responsive** — sidebar collapses into a slide-out drawer below `lg`;
-  verified at 375px and 1440px with zero horizontal page scroll.
-- **Loading states** — skeletons and empty states on every list/table, not
-  just a spinner.
+**Dashboard** — four KPI cards, a revenue line chart, a deals-by-stage bar
+chart, and a table of the five most recent deals.
 
-<table>
-<tr>
-<td><img src="docs/screenshots/04-deals-kanban.png" alt="Deals kanban board" /></td>
-<td><img src="docs/screenshots/03-clients-light.png" alt="Clients table" /></td>
-</tr>
-<tr>
-<td><img src="docs/screenshots/06-dashboard-dark.png" alt="Dashboard, dark theme" /></td>
-<td><img src="docs/screenshots/08-dashboard-ru.png" alt="Dashboard, Russian locale" /></td>
-</tr>
-</table>
+![Dashboard, light theme](docs/screenshots/02-dashboard-light.png)
+
+**Clients** — search, status filter, sortable columns, a create/edit dialog
+with validation, and delete with confirmation.
+
+![Clients table](docs/screenshots/03-clients-light.png)
+
+**Deals** — a five-column Kanban board (New → In Progress → Negotiation →
+Won / Lost) with pointer, touch, and keyboard drag-and-drop.
+
+![Deals kanban board](docs/screenshots/04-deals-kanban.png)
+
+**Tasks** — a checklist with client links, due dates, and colour-coded
+priority, filterable by open/done.
+
+![Tasks list](docs/screenshots/05-tasks-light.png)
+
+**Theming** — light/dark, persisted, applied before first paint (no flash).
+
+![Dashboard, dark theme](docs/screenshots/06-dashboard-dark.png)
+
+**Localization** — full Russian/English UI switch, dates and currency
+formatted per-locale via `Intl`.
+
+![Dashboard, Russian locale](docs/screenshots/08-dashboard-ru.png)
+
+**Responsive** — sidebar collapses into a slide-out drawer below `lg`;
+verified at 375px and 1440px with zero horizontal page scroll.
 
 <img src="docs/screenshots/09-mobile-tasks.png" width="280" alt="Tasks page on mobile" /> <img src="docs/screenshots/10-mobile-menu.png" width="280" alt="Mobile navigation drawer" />
+
+**Loading states** — skeletons and empty states on every list/table, not
+just a spinner (visible briefly on first load of any page above).
 
 ## Running locally
 

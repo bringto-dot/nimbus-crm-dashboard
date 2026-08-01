@@ -21,7 +21,7 @@ export const usePreferencesStore = create<PreferencesState>()(
   persist(
     (set, get) => ({
       theme: systemTheme(),
-      language: 'en',
+      language: 'ru',
       setTheme: (theme) => set({ theme }),
       toggleTheme: () => set({ theme: get().theme === 'dark' ? 'light' : 'dark' }),
       setLanguage: (language) => set({ language }),
