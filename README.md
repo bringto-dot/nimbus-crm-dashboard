@@ -1,3 +1,5 @@
+**English** · [Русский](README.ru.md)
+
 # Nimbus CRM
 
 A CRM dashboard built to showcase front-end engineering: a typed data layer, a
