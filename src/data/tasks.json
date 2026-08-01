@@ -1,0 +1,200 @@
+[
+  {
+    "id": "t-01",
+    "title": "Send revised proposal to Stonegate",
+    "clientId": "c-13",
+    "dueDate": "2026-08-04",
+    "priority": "high",
+    "done": false,
+    "createdAt": "2026-07-28"
+  },
+  {
+    "id": "t-02",
+    "title": "Schedule migration kick-off call",
+    "clientId": "c-09",
+    "dueDate": "2026-08-06",
+    "priority": "high",
+    "done": false,
+    "createdAt": "2026-07-29"
+  },
+  {
+    "id": "t-03",
+    "title": "Collect brand assets for redesign",
+    "clientId": "c-02",
+    "dueDate": "2026-08-11",
+    "priority": "medium",
+    "done": false,
+    "createdAt": "2026-07-24"
+  },
+  {
+    "id": "t-04",
+    "title": "Follow up on unsigned NDA",
+    "clientId": "c-03",
+    "dueDate": "2026-08-03",
+    "priority": "medium",
+    "done": false,
+    "createdAt": "2026-07-26"
+  },
+  {
+    "id": "t-05",
+    "title": "Prepare Q3 pipeline review deck",
+    "clientId": null,
+    "dueDate": "2026-08-14",
+    "priority": "high",
+    "done": false,
+    "createdAt": "2026-07-20"
+  },
+  {
+    "id": "t-06",
+    "title": "Confirm audit scope with legal",
+    "clientId": "c-07",
+    "dueDate": "2026-08-08",
+    "priority": "medium",
+    "done": false,
+    "createdAt": "2026-07-25"
+  },
+  {
+    "id": "t-07",
+    "title": "Draft telematics rollout timeline",
+    "clientId": "c-08",
+    "dueDate": "2026-08-18",
+    "priority": "low",
+    "done": false,
+    "createdAt": "2026-07-21"
+  },
+  {
+    "id": "t-08",
+    "title": "Archive closed Lumen Health tickets",
+    "clientId": "c-05",
+    "dueDate": "2026-07-24",
+    "priority": "low",
+    "done": true,
+    "createdAt": "2026-07-10"
+  },
+  {
+    "id": "t-09",
+    "title": "Write post-mortem for Vertex loss",
+    "clientId": "c-11",
+    "dueDate": "2026-08-07",
+    "priority": "medium",
+    "done": false,
+    "createdAt": "2026-07-18"
+  },
+  {
+    "id": "t-10",
+    "title": "Review CDN pricing tiers",
+    "clientId": "c-16",
+    "dueDate": "2026-08-12",
+    "priority": "medium",
+    "done": false,
+    "createdAt": "2026-07-27"
+  },
+  {
+    "id": "t-11",
+    "title": "Send onboarding guide to Meridian",
+    "clientId": "c-10",
+    "dueDate": "2026-07-18",
+    "priority": "low",
+    "done": true,
+    "createdAt": "2026-07-05"
+  },
+  {
+    "id": "t-12",
+    "title": "Book security review slot",
+    "clientId": "c-18",
+    "dueDate": "2026-08-20",
+    "priority": "high",
+    "done": false,
+    "createdAt": "2026-07-30"
+  },
+  {
+    "id": "t-13",
+    "title": "Translate contract to Portuguese",
+    "clientId": "c-15",
+    "dueDate": "2026-08-25",
+    "priority": "low",
+    "done": false,
+    "createdAt": "2026-07-23"
+  },
+  {
+    "id": "t-14",
+    "title": "Renew design system licence",
+    "clientId": "c-14",
+    "dueDate": "2026-07-14",
+    "priority": "medium",
+    "done": true,
+    "createdAt": "2026-07-01"
+  },
+  {
+    "id": "t-15",
+    "title": "Update CRM stage definitions",
+    "clientId": null,
+    "dueDate": "2026-08-28",
+    "priority": "low",
+    "done": false,
+    "createdAt": "2026-07-16"
+  },
+  {
+    "id": "t-16",
+    "title": "Call Nileworks about expansion",
+    "clientId": "c-21",
+    "dueDate": "2026-08-05",
+    "priority": "high",
+    "done": false,
+    "createdAt": "2026-07-29"
+  },
+  {
+    "id": "t-17",
+    "title": "Prepare POS integration estimate",
+    "clientId": "c-20",
+    "dueDate": "2026-08-13",
+    "priority": "medium",
+    "done": false,
+    "createdAt": "2026-07-26"
+  },
+  {
+    "id": "t-18",
+    "title": "Send invoice for contractor portal",
+    "clientId": "c-19",
+    "dueDate": "2026-07-27",
+    "priority": "high",
+    "done": true,
+    "createdAt": "2026-07-22"
+  },
+  {
+    "id": "t-19",
+    "title": "Re-engage dormant accounts",
+    "clientId": "c-22",
+    "dueDate": "2026-08-22",
+    "priority": "low",
+    "done": false,
+    "createdAt": "2026-07-15"
+  },
+  {
+    "id": "t-20",
+    "title": "Compare attribution vendor quotes",
+    "clientId": "c-23",
+    "dueDate": "2026-08-10",
+    "priority": "medium",
+    "done": false,
+    "createdAt": "2026-07-24"
+  },
+  {
+    "id": "t-21",
+    "title": "Localise onboarding emails",
+    "clientId": "c-24",
+    "dueDate": "2026-08-17",
+    "priority": "low",
+    "done": false,
+    "createdAt": "2026-07-19"
+  },
+  {
+    "id": "t-22",
+    "title": "Clean up duplicate lead records",
+    "clientId": null,
+    "dueDate": "2026-07-30",
+    "priority": "medium",
+    "done": true,
+    "createdAt": "2026-07-12"
+  }
+]

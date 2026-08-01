@@ -1,0 +1,242 @@
+[
+  {
+    "id": "c-01",
+    "name": "Anna Kovalenko",
+    "email": "anna.kovalenko@northwind.io",
+    "company": "Northwind Labs",
+    "phone": "+1 415 220 8841",
+    "status": "active",
+    "totalValue": 128400,
+    "createdAt": "2025-02-11"
+  },
+  {
+    "id": "c-02",
+    "name": "Marcus Feld",
+    "email": "m.feld@brightpath.com",
+    "company": "Brightpath Media",
+    "phone": "+49 30 5522 1180",
+    "status": "active",
+    "totalValue": 96250,
+    "createdAt": "2025-03-04"
+  },
+  {
+    "id": "c-03",
+    "name": "Sofia Marchetti",
+    "email": "sofia@velaro.design",
+    "company": "Velaro Studio",
+    "phone": "+39 02 8877 4413",
+    "status": "lead",
+    "totalValue": 0,
+    "createdAt": "2026-06-22"
+  },
+  {
+    "id": "c-04",
+    "name": "Daniel Okoye",
+    "email": "d.okoye@ironclad-fin.com",
+    "company": "Ironclad Financial",
+    "phone": "+44 20 7946 0231",
+    "status": "active",
+    "totalValue": 214800,
+    "createdAt": "2024-11-19"
+  },
+  {
+    "id": "c-05",
+    "name": "Elena Vasquez",
+    "email": "elena.vasquez@lumenhealth.co",
+    "company": "Lumen Health",
+    "phone": "+34 91 220 7719",
+    "status": "active",
+    "totalValue": 74900,
+    "createdAt": "2025-07-30"
+  },
+  {
+    "id": "c-06",
+    "name": "Tobias Lind",
+    "email": "tobias@arcticpeak.se",
+    "company": "Arctic Peak",
+    "phone": "+46 8 551 2290",
+    "status": "inactive",
+    "totalValue": 32100,
+    "createdAt": "2024-08-02"
+  },
+  {
+    "id": "c-07",
+    "name": "Priya Raghunathan",
+    "email": "priya.r@sundeck.in",
+    "company": "Sundeck Analytics",
+    "phone": "+91 22 4004 8812",
+    "status": "active",
+    "totalValue": 158700,
+    "createdAt": "2025-01-16"
+  },
+  {
+    "id": "c-08",
+    "name": "James Whitmore",
+    "email": "jwhitmore@atlasfreight.com",
+    "company": "Atlas Freight",
+    "phone": "+1 312 665 0092",
+    "status": "lead",
+    "totalValue": 0,
+    "createdAt": "2026-07-09"
+  },
+  {
+    "id": "c-09",
+    "name": "Yuki Tanaka",
+    "email": "y.tanaka@keiro-tech.jp",
+    "company": "Keiro Technologies",
+    "phone": "+81 3 6821 4407",
+    "status": "active",
+    "totalValue": 187300,
+    "createdAt": "2024-12-05"
+  },
+  {
+    "id": "c-10",
+    "name": "Nadia Hassan",
+    "email": "nadia@meridianhr.com",
+    "company": "Meridian HR",
+    "phone": "+971 4 355 9902",
+    "status": "active",
+    "totalValue": 61500,
+    "createdAt": "2025-09-12"
+  },
+  {
+    "id": "c-11",
+    "name": "Lukas Brandt",
+    "email": "l.brandt@vertexauto.de",
+    "company": "Vertex Automotive",
+    "phone": "+49 89 2154 6600",
+    "status": "inactive",
+    "totalValue": 45200,
+    "createdAt": "2024-06-27"
+  },
+  {
+    "id": "c-12",
+    "name": "Camille Roux",
+    "email": "camille.roux@paletteco.fr",
+    "company": "Palette & Co",
+    "phone": "+33 1 4488 3320",
+    "status": "lead",
+    "totalValue": 0,
+    "createdAt": "2026-07-24"
+  },
+  {
+    "id": "c-13",
+    "name": "Owen Bradley",
+    "email": "owen@stonegatecap.com",
+    "company": "Stonegate Capital",
+    "phone": "+1 646 771 3348",
+    "status": "active",
+    "totalValue": 243900,
+    "createdAt": "2024-10-14"
+  },
+  {
+    "id": "c-14",
+    "name": "Ingrid Solberg",
+    "email": "ingrid@fjordworks.no",
+    "company": "Fjordworks",
+    "phone": "+47 22 55 8810",
+    "status": "active",
+    "totalValue": 88600,
+    "createdAt": "2025-05-08"
+  },
+  {
+    "id": "c-15",
+    "name": "Rafael Duarte",
+    "email": "rafael.duarte@cascavel.br",
+    "company": "Cascavel Logística",
+    "phone": "+55 11 3255 7740",
+    "status": "lead",
+    "totalValue": 0,
+    "createdAt": "2026-05-30"
+  },
+  {
+    "id": "c-16",
+    "name": "Hannah Weiss",
+    "email": "hannah@orbitcloud.com",
+    "company": "Orbit Cloud",
+    "phone": "+1 206 442 1187",
+    "status": "active",
+    "totalValue": 172400,
+    "createdAt": "2025-04-01"
+  },
+  {
+    "id": "c-17",
+    "name": "Viktor Petrenko",
+    "email": "v.petrenko@granitecore.com",
+    "company": "Granite Core",
+    "phone": "+380 44 220 1145",
+    "status": "inactive",
+    "totalValue": 27800,
+    "createdAt": "2024-09-23"
+  },
+  {
+    "id": "c-18",
+    "name": "Amelia Chen",
+    "email": "amelia.chen@quantoedge.com",
+    "company": "Quanto Edge",
+    "phone": "+65 6220 8874",
+    "status": "active",
+    "totalValue": 134700,
+    "createdAt": "2025-08-19"
+  },
+  {
+    "id": "c-19",
+    "name": "Peter Novak",
+    "email": "peter.novak@zenithbuild.cz",
+    "company": "Zenith Build",
+    "phone": "+420 2 2110 4488",
+    "status": "active",
+    "totalValue": 59300,
+    "createdAt": "2025-11-06"
+  },
+  {
+    "id": "c-20",
+    "name": "Laura Simmons",
+    "email": "laura@harborline.co.uk",
+    "company": "Harborline Retail",
+    "phone": "+44 161 496 0072",
+    "status": "lead",
+    "totalValue": 0,
+    "createdAt": "2026-07-17"
+  },
+  {
+    "id": "c-21",
+    "name": "Omar Haddad",
+    "email": "omar.haddad@nileworks.eg",
+    "company": "Nileworks",
+    "phone": "+20 2 2735 6690",
+    "status": "active",
+    "totalValue": 103200,
+    "createdAt": "2025-06-13"
+  },
+  {
+    "id": "c-22",
+    "name": "Greta Lindqvist",
+    "email": "greta@formfactor.se",
+    "company": "Formfactor AB",
+    "phone": "+46 31 774 2205",
+    "status": "inactive",
+    "totalValue": 38400,
+    "createdAt": "2024-07-15"
+  },
+  {
+    "id": "c-23",
+    "name": "Nathan Okafor",
+    "email": "nathan@drift-analytics.com",
+    "company": "Drift Analytics",
+    "phone": "+1 512 908 4416",
+    "status": "active",
+    "totalValue": 119800,
+    "createdAt": "2025-10-28"
+  },
+  {
+    "id": "c-24",
+    "name": "Marta Kowalska",
+    "email": "m.kowalska@bluestone.pl",
+    "company": "Bluestone Group",
+    "phone": "+48 22 553 8801",
+    "status": "active",
+    "totalValue": 91600,
+    "createdAt": "2026-01-21"
+  }
+]

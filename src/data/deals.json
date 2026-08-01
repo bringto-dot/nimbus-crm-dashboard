@@ -1,0 +1,202 @@
+[
+  {
+    "id": "d-01",
+    "title": "Enterprise plan — 250 seats",
+    "clientId": "c-13",
+    "amount": 96000,
+    "stage": "negotiation",
+    "dueDate": "2026-08-21",
+    "createdAt": "2026-05-12",
+    "owner": "Irina Sokolova"
+  },
+  {
+    "id": "d-02",
+    "title": "Data warehouse migration",
+    "clientId": "c-09",
+    "amount": 74500,
+    "stage": "in_progress",
+    "dueDate": "2026-09-04",
+    "createdAt": "2026-06-02",
+    "owner": "Mark Dolan"
+  },
+  {
+    "id": "d-03",
+    "title": "Annual support retainer",
+    "clientId": "c-04",
+    "amount": 42000,
+    "stage": "won",
+    "dueDate": "2026-07-15",
+    "createdAt": "2026-04-18",
+    "owner": "Irina Sokolova"
+  },
+  {
+    "id": "d-04",
+    "title": "Brand site redesign",
+    "clientId": "c-02",
+    "amount": 28500,
+    "stage": "in_progress",
+    "dueDate": "2026-08-29",
+    "createdAt": "2026-06-20",
+    "owner": "Elena Fischer"
+  },
+  {
+    "id": "d-05",
+    "title": "Pilot programme — 3 months",
+    "clientId": "c-03",
+    "amount": 12000,
+    "stage": "new",
+    "dueDate": "2026-09-12",
+    "createdAt": "2026-07-22",
+    "owner": "Mark Dolan"
+  },
+  {
+    "id": "d-06",
+    "title": "Compliance audit toolkit",
+    "clientId": "c-07",
+    "amount": 58800,
+    "stage": "negotiation",
+    "dueDate": "2026-08-14",
+    "createdAt": "2026-05-27",
+    "owner": "Elena Fischer"
+  },
+  {
+    "id": "d-07",
+    "title": "Fleet telematics rollout",
+    "clientId": "c-08",
+    "amount": 33500,
+    "stage": "new",
+    "dueDate": "2026-10-01",
+    "createdAt": "2026-07-11",
+    "owner": "Tom Reyes"
+  },
+  {
+    "id": "d-08",
+    "title": "Patient portal integration",
+    "clientId": "c-05",
+    "amount": 47200,
+    "stage": "won",
+    "dueDate": "2026-06-30",
+    "createdAt": "2026-03-09",
+    "owner": "Irina Sokolova"
+  },
+  {
+    "id": "d-09",
+    "title": "Legacy CRM replacement",
+    "clientId": "c-11",
+    "amount": 65000,
+    "stage": "lost",
+    "dueDate": "2026-05-20",
+    "createdAt": "2026-02-14",
+    "owner": "Tom Reyes"
+  },
+  {
+    "id": "d-10",
+    "title": "Multi-region CDN package",
+    "clientId": "c-16",
+    "amount": 81300,
+    "stage": "in_progress",
+    "dueDate": "2026-09-18",
+    "createdAt": "2026-06-08",
+    "owner": "Mark Dolan"
+  },
+  {
+    "id": "d-11",
+    "title": "Recruiting automation add-on",
+    "clientId": "c-10",
+    "amount": 19400,
+    "stage": "won",
+    "dueDate": "2026-07-02",
+    "createdAt": "2026-04-25",
+    "owner": "Elena Fischer"
+  },
+  {
+    "id": "d-12",
+    "title": "Risk modelling module",
+    "clientId": "c-18",
+    "amount": 52600,
+    "stage": "negotiation",
+    "dueDate": "2026-08-27",
+    "createdAt": "2026-06-15",
+    "owner": "Tom Reyes"
+  },
+  {
+    "id": "d-13",
+    "title": "Warehouse ops dashboard",
+    "clientId": "c-15",
+    "amount": 24800,
+    "stage": "new",
+    "dueDate": "2026-09-25",
+    "createdAt": "2026-07-19",
+    "owner": "Mark Dolan"
+  },
+  {
+    "id": "d-14",
+    "title": "Design system licence",
+    "clientId": "c-14",
+    "amount": 16700,
+    "stage": "won",
+    "dueDate": "2026-07-08",
+    "createdAt": "2026-05-03",
+    "owner": "Elena Fischer"
+  },
+  {
+    "id": "d-15",
+    "title": "On-prem deployment",
+    "clientId": "c-17",
+    "amount": 39900,
+    "stage": "lost",
+    "dueDate": "2026-04-28",
+    "createdAt": "2026-01-30",
+    "owner": "Irina Sokolova"
+  },
+  {
+    "id": "d-16",
+    "title": "Regional expansion package",
+    "clientId": "c-21",
+    "amount": 44300,
+    "stage": "in_progress",
+    "dueDate": "2026-09-08",
+    "createdAt": "2026-06-26",
+    "owner": "Tom Reyes"
+  },
+  {
+    "id": "d-17",
+    "title": "POS integration — 40 stores",
+    "clientId": "c-20",
+    "amount": 27600,
+    "stage": "new",
+    "dueDate": "2026-10-06",
+    "createdAt": "2026-07-25",
+    "owner": "Elena Fischer"
+  },
+  {
+    "id": "d-18",
+    "title": "Attribution suite upgrade",
+    "clientId": "c-23",
+    "amount": 36400,
+    "stage": "negotiation",
+    "dueDate": "2026-08-19",
+    "createdAt": "2026-06-11",
+    "owner": "Mark Dolan"
+  },
+  {
+    "id": "d-19",
+    "title": "Contractor portal build",
+    "clientId": "c-19",
+    "amount": 21500,
+    "stage": "won",
+    "dueDate": "2026-07-21",
+    "createdAt": "2026-05-16",
+    "owner": "Irina Sokolova"
+  },
+  {
+    "id": "d-20",
+    "title": "Localisation rollout — EU",
+    "clientId": "c-24",
+    "amount": 31200,
+    "stage": "in_progress",
+    "dueDate": "2026-09-30",
+    "createdAt": "2026-07-01",
+    "owner": "Tom Reyes"
+  }
+]
