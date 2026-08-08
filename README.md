@@ -1,148 +1,158 @@
-**English** · [Русский](README.ru.md)
-
 # Nimbus CRM
 
-A CRM dashboard built to showcase front-end engineering: a typed data layer, a
-drag-and-drop pipeline board, full light/dark theming, and a bilingual UI —
-all running against an in-memory mock backend so the whole thing works
-entirely in the browser.
+**Language:** 🇬🇧 [English](README.md) · 🇷🇺 [Русский](README.ru.md)
 
-**[Live demo →](https://bringto-dot.github.io/nimbus-crm-dashboard/)**
+**[Live Demo](https://bringto-dot.github.io/nimbus-crm-dashboard/)**
 
-Sign in with any email and any password of 6+ characters — there's no real
-backend, so nothing you type is validated against a server or stored anywhere
-but your own browser's `localStorage`. The UI defaults to Russian, with a
-one-click switch to English in the header.
+![Dashboard](docs/screenshots/02-dashboard-light.png)
 
-![Sign-in screen](docs/screenshots/01-login.png)
+A CRM dashboard focused on interface quality, realistic application flows,
+and structured front-end architecture.
 
-## Stack
+Nimbus brings together the main workflows of a small CRM in one interface:
+performance overview, client management, deal pipeline, and task tracking.
+The application runs entirely in the browser using mock data, making every
+part of the interface available in the live demo without a separate
+backend.
 
-React 18 · TypeScript (`strict`) · Vite · Tailwind CSS · Radix UI primitives ·
-Zustand · React Router · Recharts · `@dnd-kit` · lucide-react
+## Overview
 
-## Features
+The application is built around several connected CRM workflows rather than
+a single dashboard screen.
 
-**Dashboard** — four KPI cards, a revenue line chart, a deals-by-stage bar
-chart, and a table of the five most recent deals.
+The dashboard provides an overview of key metrics, revenue trends, deal
+stages, and recent activity.
 
-![Dashboard, light theme](docs/screenshots/02-dashboard-light.png)
+The clients section handles searchable and sortable records, status
+filtering, create/edit forms, validation, and deletion with confirmation.
 
-**Clients** — search, status filter, sortable columns, a create/edit dialog
-with validation, and delete with confirmation.
+The deals section uses a five-stage Kanban pipeline where deals can be moved
+between stages through drag-and-drop.
 
-![Clients table](docs/screenshots/03-clients-light.png)
+The tasks section connects tasks with clients and combines due dates,
+priorities, and completion state in a compact workflow.
 
-**Deals** — a five-column Kanban board (New → In Progress → Negotiation →
-Won / Lost) with pointer, touch, and keyboard drag-and-drop.
+## Interface
+
+### Dashboard
+
+The main dashboard combines KPI cards, a revenue chart, a deal-stage chart,
+and a recent-deals table.
+
+The layout keeps the most important information visible without turning
+the page into a collection of disconnected widgets.
+
+### Deal pipeline
+
+The Deals page is built around a five-column Kanban:
+
+`New → In Progress → Negotiation → Won / Lost`
+
+Dragging works with pointer and touch input, while keyboard sensors provide
+an additional interaction method.
 
 ![Deals kanban board](docs/screenshots/04-deals-kanban.png)
 
-**Tasks** — a checklist with client links, due dates, and colour-coded
-priority, filterable by open/done.
+### Clients and tasks
 
-![Tasks list](docs/screenshots/05-tasks-light.png)
+Client records can be searched, filtered, sorted, created, edited, and
+removed. Deleting a client also removes the related deals and tasks from
+the application state.
 
-**Theming** — light/dark, persisted, applied before first paint (no flash).
+Tasks are presented as a focused checklist with client links, due dates,
+priorities, and open/done filtering.
 
-![Dashboard, dark theme](docs/screenshots/06-dashboard-dark.png)
+## Design and responsive behavior
 
-**Localization** — full Russian/English UI switch, dates and currency
-formatted per-locale via `Intl`.
+The interface supports both light and dark themes, with the selected theme
+persisted between sessions.
 
-![Dashboard, Russian locale](docs/screenshots/08-dashboard-ru.png)
+Russian and English are available throughout the application. Dates and
+currency values are formatted according to the active locale.
 
-**Responsive** — sidebar collapses into a slide-out drawer below `lg`;
-verified at 375px and 1440px with zero horizontal page scroll.
+The desktop sidebar turns into a mobile drawer on smaller screens. Tables
+hide secondary columns instead of forcing the page into horizontal
+overflow, while the Kanban board keeps its columns accessible through
+horizontal scrolling.
 
-<img src="docs/screenshots/09-mobile-tasks.png" width="280" alt="Tasks page on mobile" /> <img src="docs/screenshots/10-mobile-menu.png" width="280" alt="Mobile navigation drawer" />
+The responsive layout was checked at 375px and 1440px.
 
-**Loading states** — skeletons and empty states on every list/table, not
-just a spinner (visible briefly on first load of any page above).
+## Front-end architecture
 
-## Running locally
+The application is organized around domain-specific modules instead of
+placing all dashboard logic in a single page.
 
-```bash
-npm install
-npm run dev
-```
-
-Open `http://localhost:5173`.
-
-Other scripts: `npm run build` (`tsc -b && vite build`), `npm run preview`,
-`npm run typecheck`.
-
-## Pages
-
-| Route        | What's there |
-| ------------ | ------------ |
-| `/login`     | Validated sign-in form, redirects to the dashboard, state in `useAuthStore` |
-| `/dashboard` | KPI cards, revenue and pipeline charts, latest-deals table |
-| `/clients`   | Search, status filter, sortable table, create/edit dialog, delete with confirmation |
-| `/deals`     | Kanban board with drag-and-drop across five stages |
-| `/tasks`     | Checklist with client link, due date, priority, and open/done filters |
-
-Protected routes are gated by `ProtectedRoute`; unknown paths render a 404.
-
-## Project structure
-
-```
+```text
 src/
-  components/
-    ui/         shadcn/ui-style primitives (button, card, dialog, select, table…)
-    common/     shared building blocks (EmptyState, ConfirmDialog, PageHeader, skeletons)
-    layout/     sidebar, header, mobile drawer, theme/language toggles
-    dashboard/  KPI cards, charts, latest-deals table
-    clients/    toolbar, table, sortable headers, client form
-    deals/      deal card, stage column, kanban board
-    tasks/      task item, filters, task form
-  data/         mock JSON: 24 clients, 20 deals, 22 tasks, 12 months of revenue
-  hooks/        usePageTitle, useThemeEffect, useClientFilters
-  i18n/         en/ru dictionaries and the useTranslation hook
-  lib/          cn(), currency/date formatters, stage/status constants
-  pages/        Login, Dashboard, Clients, Deals, Tasks, NotFound
-  store/        useCrmStore (data + actions), useAuthStore, usePreferencesStore, selectors
-  types/        Client, Deal, Task and their derived types
+├── components/
+│   ├── ui/
+│   ├── common/
+│   ├── layout/
+│   ├── dashboard/
+│   ├── clients/
+│   ├── deals/
+│   └── tasks/
+├── data/
+├── hooks/
+├── i18n/
+├── lib/
+├── pages/
+├── store/
+└── types/
 ```
 
-## Notable implementation details
+The main domain models are `Client`, `Deal`, and `Task`. Application
+mutations are exposed through named Zustand actions, while derived values
+such as KPIs and deal-stage grouping are kept in selectors.
 
-- **Typing.** `strict: true` plus `noUnusedLocals` / `noUnusedParameters` /
-  `noImplicitReturns`. Domain types (`Client`, `Deal`, `Task`) live in
-  `src/types` and flow through the store, selectors, and every form.
-- **Store.** All mutations go through named actions
-  (`addClient`, `updateClient`, `deleteClient`, `moveDeal`, `addTask`,
-  `toggleTask`, `deleteTask`). Deleting a client cascades to their deals and
-  tasks. Derived values (KPIs, stage grouping) are pure functions in
-  `store/selectors.ts`, kept separate from the store so they're trivial to
-  unit test.
-- **Loading.** `loadData()` simulates a network round trip, so the skeleton
-  states are actually exercised rather than only existing on paper.
-- **Theme & language.** Persisted to `localStorage` via `zustand/persist`;
-  the theme class is applied by an inline script in `index.html` before
-  React mounts, so there's no light-mode flash on load.
-- **i18n.** A small hand-rolled layer: the `en` dictionary defines the key
-  type, and `ru` must implement it in full — a missing translation is a
-  compile error, not a runtime blank string. Dates and currency are
-  formatted through `Intl` for the active locale.
-- **Drag and drop.** `@dnd-kit` sensor options are hoisted to module-level
-  constants. Passing inline option objects to `useSensor` makes it rebuild
-  the sensor on every render, which silently aborts an in-progress drag —
-  a real bug I hit and fixed while building this, not a hypothetical one.
-  Pointer, touch (with an activation delay so scrolling isn't hijacked),
-  and keyboard sensors are all wired up.
-- **Responsive.** Verified at 375px and 1440px: the sidebar collapses into a
-  drawer below `lg`, the kanban board scrolls horizontally on narrow
-  screens, and tables hide secondary columns rather than overflowing.
+This keeps UI components focused on presentation and interaction while
+application state and derived data remain separate.
+
+## Details that matter
+
+### Typed domain model
+
+TypeScript runs with strict checks, including unused-variable and
+implicit-return checks. Domain types are shared across the store,
+selectors, forms, and UI components.
+
+### Drag-and-drop
+
+The Kanban uses `@dnd-kit` with pointer, touch, and keyboard sensors. Touch
+interaction includes an activation delay so normal page scrolling is not
+accidentally captured by the drag system.
+
+### Localization
+
+The English dictionary defines the translation keys used by the
+application, while the Russian dictionary is required to implement the
+same structure. Missing translations therefore become a type-level problem
+instead of silently producing empty UI text.
+
+### Theme persistence
+
+Theme and language preferences are persisted with Zustand. The theme class
+is applied before React mounts, avoiding a visible theme switch during the
+initial page load.
 
 ## Deployment
 
-Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml),
-which builds the app and publishes `dist/` to GitHub Pages via
-`actions/deploy-pages`. The router switches to `HashRouter` in production
-since Pages serves static files with no server-side rewrites — a path-based
-router would 404 on refresh or a direct link.
+The project is deployed to GitHub Pages.
 
-## License
+Every push to `main` builds the application and publishes the resulting
+`dist` directory through GitHub Actions. Production routing uses
+`HashRouter` to work with GitHub Pages without server-side route rewrites.
 
-MIT
+## Project scope
+
+Nimbus CRM uses mock data and browser storage rather than a production
+backend. The goal is to demonstrate the interface, application state,
+interaction patterns, responsive behavior, and front-end organization in a
+self-contained project.
+
+## Result
+
+Nimbus CRM demonstrates how a dashboard can be developed as a complete
+product interface rather than a collection of isolated screens: data views,
+forms, filters, Kanban interactions, state management, localization,
+themes, and responsive layouts all work together as one application.
