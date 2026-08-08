@@ -2,6 +2,12 @@
 
 **Language:** 🇬🇧 [English](README.md) · 🇷🇺 [Русский](README.ru.md)
 
+![React](https://img.shields.io/badge/React-18-61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6)
+![Zustand](https://img.shields.io/badge/Zustand-4-orange)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3-38BDF8)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 **[Live Demo](https://bringto-dot.github.io/nimbus-crm-dashboard/)**
 
 ![Dashboard](docs/screenshots/02-dashboard-light.png)
